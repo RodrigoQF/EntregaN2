@@ -1,5 +1,8 @@
 package org.example.api;
-public class Results {
+
+import java.io.Serializable;
+
+public class Results implements Serializable {
     String date;
     Double value;
 

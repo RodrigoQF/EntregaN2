@@ -13,6 +13,7 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -24,21 +25,25 @@
     </option>
   </component>
   <component name="ProjectId" id="1dgZGC6gaHP2majttieHqs6ncQN" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../__MACOSX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.recursos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\GoogleTrends\EntregaN2\.idea\resources" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -50,36 +55,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592848598858</updated>
-      <workItem from="1592848601993" duration="1825000" />
+      <workItem from="1592848601993" duration="2106000" />
+      <workItem from="1592852476621" duration="1185000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592850535616">
+    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592850436915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592850535616" />
-    <state width="1877" height="441" key="GridCell.Tab.0.bottom" timestamp="1592848709544">
+    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592850436915" />
+    <state x="740" y="246" key="FileChooserDialogImpl" timestamp="1592852777561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592848709544" />
-    <state width="1877" height="441" key="GridCell.Tab.0.center" timestamp="1592848709544">
+    <state x="740" y="246" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592852777561" />
+    <state width="1877" height="441" key="GridCell.Tab.0.bottom" timestamp="1592850710298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592848709544" />
-    <state width="1877" height="441" key="GridCell.Tab.0.left" timestamp="1592848709543">
+    <state width="1877" height="441" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
+    <state width="1877" height="441" key="GridCell.Tab.0.center" timestamp="1592850710298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592848709543" />
-    <state width="1877" height="441" key="GridCell.Tab.0.right" timestamp="1592848709544">
+    <state width="1877" height="441" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
+    <state width="1877" height="441" key="GridCell.Tab.0.left" timestamp="1592850710297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592848709544" />
+    <state width="1877" height="441" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710297" />
+    <state width="1877" height="441" key="GridCell.Tab.0.right" timestamp="1592850710298">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="441" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1592853250632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592853250632" />
   </component>
 </project>

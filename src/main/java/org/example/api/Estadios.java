@@ -1,8 +1,9 @@
 package org.example.api;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Estadios {
+public class Estadios implements Serializable {
     private String term;
     private List<Results> estadios;
 
