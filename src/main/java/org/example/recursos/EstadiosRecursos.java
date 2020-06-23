@@ -44,9 +44,7 @@ public class EstadiosRecursos {
         String[] cols = data.split(",");
         Results result = new Results();
         result.setDate(cols[0]);
-        result.setMandante(cols[1]);
-        result.setEstadio(cols[2]);
-        result.setPublico(Integer.parseInt(cols[3]));
+        result.setPublico(Integer.parseInt(cols[1]));
         return result;
     }
 }
