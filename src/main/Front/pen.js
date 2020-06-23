@@ -19,12 +19,8 @@ d3.json("http://localhost:8080/api/estadios",
         // Format date
         var	parseDate = d3.timeParse("%Y-%m-%d");
         data = data.results.map(function(d) {
-            d.date = parseDate(d.date);
-            let newData = {
-                date: d.date,
-                mandante: d.mandante,
-                estadio: d.estadio,
-                publico: d.publico;
+            e)d.date = parseDate(d.dat;
+             publico: d.publico;
             }
             return newData;
         });
