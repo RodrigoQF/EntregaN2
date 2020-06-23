@@ -7,7 +7,7 @@ import org.example.dao.EstadiosDao;
 import javax.ws.rs.*;
 
 
-@Path("trends")
+@Path("estadios")
 @Produces({"application/json"})
 @Consumes({"application/json"})
 public class EstadiosRecursos {
@@ -18,8 +18,8 @@ public class EstadiosRecursos {
     }
 
     @GET
-    public Estadios getAllTrends() {
-        return this.dao.getAllTrends();
+    public Estadios getAllEstadios() {
+        return this.dao.getAllEstadios();
     }
 
     @POST

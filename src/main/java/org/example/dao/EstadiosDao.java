@@ -1,5 +1,6 @@
 package org.example.dao;
 
+
 import org.example.api.Estadios;
 import org.example.api.Results;
 
@@ -27,7 +28,7 @@ public class EstadiosDao {
     }
 
     //READ
-    public Estadios getAllTrends() {
+    public Estadios getAllEstadios() {
         return this.dataBase;
     }
 
@@ -48,9 +49,9 @@ public class EstadiosDao {
 
     // Lê o arquivo csv e instancia a variável database
     public void readFile(){
-        System.out.println("TrendsDAO - Lendo dados do arquivo CSV");
+        System.out.println("EstadiosDao - Lendo dados do arquivo CSV");
 
-        try (Scanner scanner = new Scanner(new File("./resources/multiTimeline.csv"));) {
+        try (Scanner scanner = new Scanner(new File(".idea/resources/multiTimeline.csv"));) {
 
             SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd");
 
@@ -76,17 +77,17 @@ public class EstadiosDao {
                 }
             }
 
-            System.out.println("TrendsDAO - Leitura realizada");
+            System.out.println("EstadiosDao - Leitura realizada");
         } catch (Exception ex) {
             this.dataBase = new Estadios();
             ex.printStackTrace();
-            System.out.println("TrendsDAO - Erro na leitura do CSV");
+            System.out.println("EstadiosDao - Erro na leitura do CSV");
         }
     }
 
 
     public void writeFile(){
-        System.out.println("TrendsDAO - Escrevendo no arquivo CSV");
+        System.out.println("EstadiosDao - Escrevendo no arquivo CSV");
 
         String str = "Category: All categories\n\nTime,";
         str += this.dataBase.getTerm() + "\n";
@@ -98,12 +99,12 @@ public class EstadiosDao {
         }
 
         try {
-            FileWriter writer = new FileWriter("./resources/multiTimeline.csv");
+            FileWriter writer = new FileWriter(".idea/resources/multiTimeline.csv");
             writer.write(str);
             writer.close();
-            System.out.println("TrendsDAO - Dados escritos no arquivo com sucesso!");
+            System.out.println("EstadiosDao - Dados escritos no arquivo com sucesso!");
         } catch (IOException e) {
-            System.out.println("TrendsDAO - Erro na escrita do CSV");
+            System.out.println("EstadiosDao - Erro na escrita do CSV");
             e.printStackTrace();
         }
     }
