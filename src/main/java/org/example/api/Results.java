@@ -4,7 +4,9 @@ import java.io.Serializable;
 
 public class Results implements Serializable {
     String date;
-    Double value;
+    String mandante;
+    String estadio;
+    int publico;
 
     public String getDate() {
         return date;
@@ -14,11 +16,27 @@ public class Results implements Serializable {
         this.date = date;
     }
 
-    public Double getValue() {
-        return value;
+    public String getMandante() {
+        return mandante;
     }
 
-    public void setValue(Double value) {
-        this.value = value;
+    public void setMandante(String mandante) {
+        this.mandante = mandante;
+    }
+
+    public String getEstadio() {
+        return estadio;
+    }
+
+    public void setEstadio(String estadio) {
+        this.estadio = estadio;
+    }
+
+    public int getPublico() {
+        return publico;
+    }
+
+    public void setPublico(int publico) {
+        this.publico = publico;
     }
 }

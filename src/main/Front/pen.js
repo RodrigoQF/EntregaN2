@@ -11,7 +11,7 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 //Read the data
-d3.json("http://localhost:8080/trends",
+d3.json("http://localhost:8080/api/estadios",
     // Now I can use this dataset:
     function(data) {
         document.getElementById("term").innerHTML = data.term;
@@ -22,7 +22,9 @@ d3.json("http://localhost:8080/trends",
             d.date = parseDate(d.date);
             let newData = {
                 date: d.date,
-                value: d.deaths_covid19 // Mude aqui o campo do json
+                mandante: d.mandante,
+                estadio: d.estadio,
+                publico: d.publico;
             }
             return newData;
         });

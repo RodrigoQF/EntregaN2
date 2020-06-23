@@ -74,13 +74,20 @@ public class EstadiosDao {
                 if (week != null) {
                     Results result = new Results();
                     result.setDate(cols[0]);
-                    result.setValue(Double.parseDouble(cols[1]));
+                    result.setMandante(cols[1]);
+                    result.setEstadio(cols[2]);
+                    result.setPublico(Integer.parseInt(cols[3]));
                     this.dataBase.getResults().add(result);
 
                     // Lendo cabecalho
-                }  else if(cols.length > 0 && (cols[0].equals("Time") || cols[0].equals("Hora"))) {
+                } else if(cols.length > 0 && (cols[0].equals("Data"))) {
+                    this.dataBase.setTerm(cols[1]);
+                } else if(cols.length > 0 && (cols[0].equals("Mandante"))) {
+                    this.dataBase.setTerm(cols[2]);
+                } else if(cols.length > 0 && (cols[0].equals("Estadio"))) {
                     this.dataBase.setTerm(cols[1]);
                 }
+
             }
 
             System.out.println("EstadiosDao - Leitura realizada");
@@ -101,7 +108,7 @@ public class EstadiosDao {
         List<Results> results =  this.dataBase.getResults();
         for( int i=0; i<results.size(); i++){
             Results r = results.get(i);
-            str += r.getDate() + "," + r.getValue() + "\n";
+            str += r.getDate() + "," + r.getMandante() + "," + r.getEstadio() + "," + r.getPublico() + "\n";
         }
 
         try {
