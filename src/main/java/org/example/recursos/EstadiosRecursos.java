@@ -24,14 +24,20 @@ public class EstadiosRecursos {
 
     @POST
     @Path("/create/{data}")
-    public void createResult(@PathParam("data") String data) {
+    public void createResult(@QueryParam("data") String data) {
         this.dao.createResult(this.getResultFromString(data));
     }
 
     @PUT
     @Path("/update/{data}")
-    public void updateResult(@PathParam("data") String data) {
+    public void updateResult(@QueryParam("data") String data) {
         this.dao.updateResult(this.getResultFromString(data));
+    }
+
+    @DELETE
+    @Path("/delete/{data}")
+    public void deleteResult(@QueryParam("data") String data) {
+        this.dao.deleteResult(this.getResultFromString(data));
     }
 
     public Results getResultFromString(String data) {

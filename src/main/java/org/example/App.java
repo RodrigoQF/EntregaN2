@@ -1,16 +1,21 @@
 package org.example;
 
 
+import io.dropwizard.assets.AssetsBundle;
+import org.eclipse.jetty.servlets.CrossOriginFilter;
 import org.example.dao.EstadiosDao;
 import org.example.recursos.EstadiosRecursos;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-public class App extends Application<Configuration>
-{
-    public static void main( String[] args )
-    {
+
+import javax.servlet.DispatcherType;
+import javax.servlet.FilterRegistration;
+import java.util.EnumSet;
+
+public class App extends Application<Configuration> {
+    public static void main( String[] args ) {
         try{
             (new App()).run(args);
         } catch(Exception ex){
@@ -25,8 +30,8 @@ public class App extends Application<Configuration>
 
     @Override
     public void initialize(Bootstrap<Configuration> bootstrap) {
-        AssestsBundle assestsBundle = new AssetsBundle("/site","/","index.html");
-        bootstrap.addBundle(assestsBundle);
+        AssetsBundle assetsBundle = new AssetsBundle("/site","/","index.html");
+        bootstrap.addBundle(assetsBundle);
     }
 
     @Override
@@ -43,5 +48,4 @@ public class App extends Application<Configuration>
         environment.jersey().register(trendsResource);
         environment.jersey().setUrlPattern("/api/*");
     }
-    teste123
 }

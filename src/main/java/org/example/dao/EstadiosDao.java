@@ -43,7 +43,13 @@ public class EstadiosDao {
     }
 
     //TODO:DELETE
-
+    public void deleteResult(Results results){
+        for(int i=0; i<this.dataBase.getResults().size(); i++) {
+            if (this.dataBase.getResults().get(i).getDate().equals(results.getDate())) {
+                this.dataBase.getResults().remove(i);
+            }
+        }
+    }
 
     // FUNÇÕES AUXILIARES
 

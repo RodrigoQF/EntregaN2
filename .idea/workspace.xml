@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbd617ca-fa40-4063-8e54-d792bbab3068" name="Default Changelist" comment="" />
+    <list default="true" id="c0f4672f-d196-43e5-98aa-6069b4249d97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,56 +10,62 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Class" />
-        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="E:\GitHub\EntregaN2" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1dgZGC6gaHP2majttieHqs6ncQN" />
+  <component name="ProjectId" id="1dinOqJU3RvOXaDBinSCG5J034q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example.recursos" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GitHub\GoogleTrends\EntregaN2\.idea\resources" />
-    </key>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="Trab" />
+      <option name="PROGRAM_PARAMETERS" value="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="Trab" />
+      <option name="PROGRAM_PARAMETERS" value="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cbd617ca-fa40-4063-8e54-d792bbab3068" name="Default Changelist" comment="" />
-      <created>1592848598858</created>
+      <changelist id="c0f4672f-d196-43e5-98aa-6069b4249d97" name="Default Changelist" comment="" />
+      <created>1592916751581</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592848598858</updated>
-      <workItem from="1592848601993" duration="2106000" />
-      <workItem from="1592852476621" duration="1185000" />
+      <updated>1592916751581</updated>
+      <workItem from="1592916754752" duration="1068000" />
     </task>
     <servers />
   </component>
@@ -67,33 +73,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592850436915">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="249" y="35" width="1102" height="817" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592917567524">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592850436915" />
-    <state x="740" y="246" key="FileChooserDialogImpl" timestamp="1592852777561">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="249" y="35" width="1102" height="817" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.852@0.0.1600.852" timestamp="1592917567524" />
+    <state x="526" y="119" key="FileChooserDialogImpl" timestamp="1592917209203">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state x="740" y="246" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592852777561" />
-    <state width="1877" height="441" key="GridCell.Tab.0.bottom" timestamp="1592850710298">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="526" y="119" key="FileChooserDialogImpl/0.0.1600.852@0.0.1600.852" timestamp="1592917209203" />
+    <state width="1544" height="199" key="GridCell.Tab.0.bottom" timestamp="1592916771083">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
-    <state width="1877" height="441" key="GridCell.Tab.0.center" timestamp="1592850710298">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1544" height="199" key="GridCell.Tab.0.bottom/0.0.1600.852@0.0.1600.852" timestamp="1592916771083" />
+    <state width="1544" height="199" key="GridCell.Tab.0.center" timestamp="1592916771082">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
-    <state width="1877" height="441" key="GridCell.Tab.0.left" timestamp="1592850710297">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1544" height="199" key="GridCell.Tab.0.center/0.0.1600.852@0.0.1600.852" timestamp="1592916771082" />
+    <state width="1544" height="199" key="GridCell.Tab.0.left" timestamp="1592916771082">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710297" />
-    <state width="1877" height="441" key="GridCell.Tab.0.right" timestamp="1592850710298">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1544" height="199" key="GridCell.Tab.0.left/0.0.1600.852@0.0.1600.852" timestamp="1592916771082" />
+    <state width="1544" height="199" key="GridCell.Tab.0.right" timestamp="1592916771083">
+      <screen x="0" y="0" width="1600" height="852" />
     </state>
-    <state width="1877" height="441" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592850710298" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1592853250632">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592853250632" />
+    <state width="1544" height="199" key="GridCell.Tab.0.right/0.0.1600.852@0.0.1600.852" timestamp="1592916771083" />
   </component>
 </project>
