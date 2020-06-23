@@ -25,14 +25,23 @@ public class App extends Application<Configuration>
 
     @Override
     public void initialize(Bootstrap<Configuration> bootstrap) {
-        // nothing to do yet
+        AssestsBundle assestsBundle = new AssetsBundle("/site","/","index.html");
+        bootstrap.addBundle(assestsBundle);
     }
 
     @Override
     public void run(Configuration configuration, Environment environment) throws Exception {
+
+        final FilterRegistration.Dynamic cors = environment.servlets().addFilter("CORS", CrossOriginFilter.class);
+        cors.setInitParameter("allowedOrigins","*");
+        cors.setInitParameter("allowedHeaders","X-Request-Width,Content-Type,Accept,Origin");
+        cors.setInitParameter("allowedMethods","OPTIONS,GET,PUT,POST,DELETE,HEAD");
+        cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/");
+
         EstadiosDao dao = new EstadiosDao();
         EstadiosRecursos trendsResource = new EstadiosRecursos(dao);
         environment.jersey().register(trendsResource);
+        environment.jersey().setUrlPattern("/api/*");
     }
 
 }
