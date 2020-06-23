@@ -43,5 +43,5 @@ public class App extends Application<Configuration>
         environment.jersey().register(trendsResource);
         environment.jersey().setUrlPattern("/api/*");
     }
-
+    teste123
 }
