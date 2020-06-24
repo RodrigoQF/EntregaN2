@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Result implements Serializable {
     String date;
-    long value;
+    long publico;
 
 
 
@@ -17,10 +17,10 @@ public class Result implements Serializable {
     }
 
     public long getPublico() {
-        return this.value;
+        return this.publico;
     }
 
-    public void setPublico(long value) {
-        this.value = value;
+    public void setPublico(long publico) {
+        this.publico = publico;
     }
 }
