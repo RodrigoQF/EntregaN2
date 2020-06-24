@@ -44,8 +44,8 @@ public class App extends Application<Configuration> {
         cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/");
 
         EstadiosDao dao = new EstadiosDao();
-        EstadiosRecursos trendsResource = new EstadiosRecursos(dao);
-        environment.jersey().register(trendsResource);
+        EstadiosRecursos estadiosRecursos = new EstadiosRecursos(dao);
+        environment.jersey().register(estadiosRecursos);
         environment.jersey().setUrlPattern("/api/*");
     }
 }

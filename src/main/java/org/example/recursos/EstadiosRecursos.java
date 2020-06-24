@@ -1,7 +1,7 @@
 package org.example.recursos;
 
 import org.example.api.Estadios;
-import org.example.api.Results;
+import org.example.api.Result;
 import org.example.dao.EstadiosDao;
 
 import javax.ws.rs.*;
@@ -40,9 +40,9 @@ public class EstadiosRecursos {
         this.dao.deleteResult(this.getResultFromString(data));
     }
 
-    public Results getResultFromString(String data) {
+    public Result getResultFromString(String data) {
         String[] cols = data.split(",");
-        Results result = new Results();
+        Result result = new Result();
         result.setDate(cols[0]);
         result.setPublico(Integer.parseInt(cols[1]));
         return result;

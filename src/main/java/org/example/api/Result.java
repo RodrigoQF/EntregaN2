@@ -6,10 +6,7 @@ public class Result implements Serializable {
     String date;
     long value;
 
-    public Result(){
-        
 
-    }
 
     public String getDate() {
         return this.date;

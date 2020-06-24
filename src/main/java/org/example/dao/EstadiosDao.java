@@ -26,13 +26,32 @@ public class EstadiosDao {
         writeFile();
     }
 
-    private void writeFile() {
+    public void writeFile(){
+        String str = "Category: Publico do estadio do Maracana\n,";
+        str += this.dataBase.getTerm() + "\n";
+
+        List<Result> results = this.dataBase.getResults();
+        for (int i = 0; i<this.dataBase.getResults().size(); i++){
+            Result r = results.get(1);
+            str += r.getDate() + "," + r.getPublico() + "\n";
+        }
+        try{
+            FileWriter writer = new FileWriter(".idea/resources/multiTimeline.csv");
+            writer.write(str);
+            writer.close();
+            System.out.println("EstadioDao - Leitura realizada");
+        } catch (IOException e){
+            System.out.println("EstadioDao - Erro na leitura do CSV");
+            e.printStackTrace();
+        }
+
     }
+
 
     //READ
     public Estadios getAllEstadios() {
 
-        System.out.println("TrendsDAO - Lendo dados do arquivo CSV");
+        System.out.println("EstadiosDao - Lendo dados do arquivo CSV");
         return this.dataBase;
 
     }
@@ -80,11 +99,11 @@ public class EstadiosDao {
                 if (week != null) {
                     Result result = new Result();
                     result.setDate(cols[0]);
-                    result.setPublico(Integer.parseInt(cols[1]));
+                    result.setPublico(Long.parseLong(cols[1]));
                     this.dataBase.getResults().add(result);
 
                     // Lendo cabecalho
-                }  else if(cols.length > 0 && (cols[0].equals("Publico"))) {
+                }  else if(cols.length > 0 && (cols[0].equals("Date") || cols[0].equals("Data"))){
                     this.dataBase.setTerm(cols[1]);
                 }
             }
